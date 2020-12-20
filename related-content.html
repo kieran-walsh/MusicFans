@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Related Content</title>
+    </head>
+    <body>
+        <h1>Related Content Computation</h1>
+        <p>Enter a valid username, and related content posts will be found for them,
+            based on the posts they currently have bookmarked.</p>
+        <hr/>
+        <p>How this external program works:</p>
+        <ol>
+            <li>For every content item, get a list of the people who like it</li>
+            <li>For every person in this list, get a list of content they like</li>
+            <li>Remove posts bookmarked or created by the given user</li>
+            <li>Then return a list of related posts, and add to the database</li>
+        </ol>
+        <form method="GET" action="related-content.php">
+            <p>Enter the username of the desired user:</p>
+            <input type="text" name="user"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
