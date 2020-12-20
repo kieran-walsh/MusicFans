@@ -1,4 +1,4 @@
-# Music Fans
+# MusicFans
 
 ### Summary
 - A basic social media site where users can talk about all things music
